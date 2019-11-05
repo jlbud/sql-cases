@@ -1,7 +1,7 @@
 -- 增加字段
 USE dhr;
-ALTER TABLE `table_name` ADD COLUMN `work_values` tinyint(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '工作选择价值观状态（1未采集，2已采集，3不需要采集）' AFTER `normstar`;
-   ADD COLUMN `key_expr` tinyint(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '关键经历状态（1未采集，2已采集，3不需要采集）' AFTER `normstar`;
+ALTER TABLE `table_name` ADD COLUMN `column_name` tinyint(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '这是对字段的描述' AFTER `column_name`,
+                        ADD COLUMN `column_name` tinyint(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '这是对字段的描述' AFTER `column_name`;
 
 -- 修改字段
 use ssc;
