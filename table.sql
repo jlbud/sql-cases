@@ -3,9 +3,9 @@ USE dhr;
 ALTER TABLE `table_name` ADD COLUMN `column_name` tinyint(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '这是对字段的描述' AFTER `column_name`,
                         ADD COLUMN `column_name` tinyint(1) UNSIGNED NOT NULL DEFAULT 0 COMMENT '这是对字段的描述' AFTER `column_name`;
 
--- 修改字段
-use ssc;
-ALTER TABLE table_name add images text NOT NULL COMMENT '图片地址';
+-- 修改字段属性
+use db_name;
+ALTER TABLE `table_name` modify column `column_name` varchar(128) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT '' COMMENT '这是对字段的描述';
 
 -- 修改字段的值
 use db_name;
